@@ -55,9 +55,9 @@ membri.forEach(element => {
     // stampa in console con singoli attributi cono dot.notation
     console.log(element.nome,element.ruolo,element.image);
     // stampa il contenuto delle stringhe dentro il div con Inner.
-     containerElement.innerHTML += `<div>nome : ${membri.nome}<br>
-     ruolo : ${membri.ruolo}<br>
-     image: ${membri.image}</div>`
+     containerElement.innerHTML += `<div>nome : ${element.nome}<br>
+     ruolo : ${element.ruolo}<br>
+     image: ${element.image}</div>`;
     
 })
 
