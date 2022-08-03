@@ -26,7 +26,8 @@ console.log('JS ok');
 // aggiungere(+=) all'inner del container il div
 // stampa il contenuto delle stringhe dentro il div con Inner.
 
-
+const containerElement = document.getElementById('container')
+// const divElement = document.createElement("div");
 
 // crea una funzione che genera membri del team i cui valori sono nome,ruolo ,immagine
 function createMember(nome, ruolo, image) {
@@ -51,8 +52,12 @@ const membri = [
 // console.log(membri)
 // cicla gli elementi per ogni membro
 membri.forEach(element => {
-    // stampa in console
+    // stampa in console con singoli attributi cono dot.notation
     console.log(element.nome,element.ruolo,element.image);
+    // stampa il contenuto delle stringhe dentro il div con Inner.
+     containerElement.innerHTML += `<div>nome : ${membri.nome}<br>
+     ruolo : ${membri.ruolo}<br>
+     image: ${membri.image}</div>`
     
 })
 
